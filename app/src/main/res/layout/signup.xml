@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_signup2"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/homeSignup"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/home_icon"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <EditText
+        android:id="@+id/emailId"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:background="@drawable/email"
+        android:hint="test@naver.com"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="140dp"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/btnEmailCheck"
+        android:layout_width="270dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Email 중복확인"
+        android:textColor="#ffff"
+        android:textSize="10dp"
+        android:backgroundTint="#F87E20">
+    </Button>
+
+    <TextView
+        android:id="@+id/tvEmailCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="10dp"
+        android:visibility="gone">
+    </TextView>
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:background="@drawable/password"
+        android:hint="*********"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="15dp"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/passCheck"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:background="@drawable/confirm_password"
+        android:hint="*********"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="15dp"
+        android:inputType="textPassword"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="25dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="-5dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:paddingTop="0dp"
+            android:src="@drawable/agree_msg" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/signup_button"
+        android:gravity="center"
+        android:paddingLeft="15dp"/>
+
+</LinearLayout>
